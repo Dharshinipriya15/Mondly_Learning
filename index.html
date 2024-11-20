@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mondly</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="sticky-header border px-3 mb-2 rounded-4 top-content">
+    <header class="py-2">
+      <div class="col-md-3 mb-2 mb-md-0">
+        <a href="index.html" class="nav-link">
+          <title>Dribbble: the community for graphic design</title>
+          <span>mondly</span> 
+        </a>
+      </div>
+
+      <ul class="nav col-12 col-md-auto mb-md-0 rounded-5 nav-bar">
+        <li><a href="#" class="nav-link px-4 px-md-2 px-xl-4">Courses</a></li>
+        <li><a href="#" class="nav-link px-4 px-md-2 px-xl-4">Dashboard</a></li>
+        <li><a href="#" class="nav-link px-4 px-md-2 px-xl-4">Schedule</a></li>
+        <li><a href="#" class="nav-link px-4 px-md-2 px-xl-4">Message</a></li>
+        <li><a href="#" class="nav-link px-4 px-md-2 px-xl-4">Support</a></li>
+      </ul>
+
+      <div class="nav-v2-dynamic nav-v2-dynamic--loaded" data-nav-v2-dynamic="">
+        <div class="nav-v2-dynamic__logged-out">
+          <form class="nav-v2-search" data-nav-v2-search-form="" action="/search">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none" role="img" class="icon nav-v2-search__icon">
+              <path d="M1.5 7.75C1.5 9.4076 2.15848 10.9973 3.33058 12.1694C4.50269 13.3415 6.0924 14 7.75 14C9.4076 14 10.9973 13.3415 12.1694 12.1694C13.3415 10.9973 14 9.4076 14 7.75C14 6.0924 13.3415 4.50269 12.1694 3.33058C10.9973 2.15848 9.4076 1.5 7.75 1.5C6.0924 1.5 4.50269 2.15848 3.33058 3.33058C2.15848 4.50269 1.5 6.0924 1.5 7.75V7.75Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M12.814 12.8132L15.5 15.4999" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>    
+            <input class="nav-v2-search__input" type="text" name="q" placeholder="Search..." autocomplete="off" value="">     
+          </form>   
+          <a class="nav-v2-search-btn" title="Search" data-nav-event-clicked="Search" href="/search">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none" role="img" class="icon nav-v2-search-btn__icon">
+            <path d="M1.5 7.75C1.5 9.4076 2.15848 10.9973 3.33058 12.1694C4.50269 13.3415 6.0924 14 7.75 14C9.4076 14 10.9973 13.3415 12.1694 12.1694C13.3415 10.9973 14 9.4076 14 7.75C14 6.0924 13.3415 4.50269 12.1694 3.33058C10.9973 2.15848 9.4076 1.5 7.75 1.5C6.0924 1.5 4.50269 2.15848 3.33058 3.33058C2.15848 4.50269 1.5 6.0924 1.5 7.75V7.75Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M12.814 12.8132L15.5 15.4999" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>    
+          </a>
+    
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle" id="dropdownUser" >
+              <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+              <span class="dropdown-icon" onclick="toggleDropdown(event)">&#9662;</span> <!-- ▼ icon -->
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownUser">
+              <li><a class="dropdown-item" href="#">New project...</a></li>
+              <li><a class="dropdown-item" href="#">Settings</a></li>
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Sign out</a></li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>      
+    </header>
+  </div>
+  <div class="content rounded-4">
+    <div class="activity">
+      <div class="activity-sub">
+        <h2>Activity</h2>
+        <a href="#" class="nav-link border">Last 7 days</a>
+      </div>
+      <div class="activity-hours">
+        <h2>24,9</h2>
+        <p>Hours <br>spent</p>
+      </div>
+      <div class="bar-graph">
+        <div class="bar-container">
+          <div class="bar" style="height: 70px;"></div>
+          <div class="label">Mon</div>
+        </div>
+        <div class="bar-container">
+          <div class="bar" style="height: 50px;"></div>
+          <div class="label">Tue</div>
+        </div>
+        <div class="bar-container">
+          <div class="bar" style="height: 150px;"></div>
+          <div class="label">Wed</div>
+        </div>
+        <div class="bar-container">
+          <div class="bar" style="height: 80px;"></div>
+          <div class="label">Thu</div>
+        </div>
+        <div class="bar-container">
+          <div class="bar" style="height: 200px;"></div>
+          <div class="label">Fri</div>
+        </div>
+        <div class="bar-container">
+          <div class="bar" style="height: 140px;"></div>
+          <div class="label">Sat</div>
+        </div>
+        <div class="bar-container">
+          <div class="bar" style="height: 180px;"></div>
+          <div class="label">Sun</div>
+        </div>
+      </div>
+      <div class="platform">
+        <h4>By platform</h4>
+        <div class="platform-details-container" id="platform-details-container"></div>
+      </div>
+    </div>
+
+    <div class="prog-stat">
+      <h3>Progress statistics</h3>
+      <div class="prog-stat-percent">
+        <h2>64%</h2>
+        <p>Total <br>activity</p>
+      </div>
+      <div class="bar-category-graph">
+        <div class="bar-category-container">
+          <div class="bar-category blue" data-percentage="20"></div>
+          <div class="label-category">24%</div>
+        </div>
+        <div class="bar-category-container">
+          <div class="bar-category green" data-percentage="30"></div>
+          <div class="label-category">35%</div>
+        </div>
+        <div class="bar-category-container">
+          <div class="bar-category orange" data-percentage="40"></div>
+          <div class="label-category">41%</div>
+        </div>
+      </div>
+      <div class="prog-stat-details">
+        <div class="prog-stat-details-prog">
+          <div class="img-bg blue">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0,0,256,256">
+              <g fill-opacity="0.0.01176" fill="#000000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.33333,5.33333)"><path d="M24,4c-11.02793,0 -20,8.97207 -20,20c0,11.02793 8.97207,20 20,20c11.02793,0 20,-8.97207 20,-20c0,-11.02793 -8.97207,-20 -20,-20zM24,7c9.40662,0 17,7.59339 17,17c0,9.40661 -7.59338,17 -17,17c-9.40661,0 -17,-7.59339 -17,-17c0,-9.40661 7.59339,-17 17,-17zM23.47656,11.97852c-0.82766,0.01293 -1.48843,0.69381 -1.47656,1.52148v12c0.00008,0.82839 0.67161,1.49992 1.5,1.5h8c0.54095,0.00765 1.04412,-0.27656 1.31683,-0.74381c0.27271,-0.46725 0.27271,-1.04514 0,-1.51238c-0.27271,-0.46725 -0.77588,-0.75146 -1.31683,-0.74381h-6.5v-10.5c0.00582,-0.40562 -0.15288,-0.7963 -0.43991,-1.08296c-0.28703,-0.28666 -0.67792,-0.44486 -1.08353,-0.43852z"></path></g></g>
+            </svg>              
+          </div>
+          <div class="prog-stat-details-txt">
+            <p><span>8</span></p>          
+            <p style="color:gray;">In progress</p>
+          </div>
+        </div>
+        <div class="prog-stat-details-prog">
+          <div class="img-bg green">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 24 24">
+              <path d="M 12 1 C 5.9375 1 1 5.9375 1 12 C 1 18.0625 5.9375 23 12 23 C 18.0625 23 23 18.0625 23 12 C 23 5.9375 18.0625 1 12 1 Z M 12 3 C 16.980469 3 21 7.019531 21 12 C 21 16.980469 16.980469 21 12 21 C 7.019531 21 3 16.980469 3 12 C 3 7.019531 7.019531 3 12 3 Z M 17.40625 8.1875 L 11 14.5625 L 7.71875 11.28125 L 6.28125 12.71875 L 10.28125 16.71875 L 11 17.40625 L 11.71875 16.71875 L 18.8125 9.59375 Z"></path>
+            </svg>
+          </div>
+          <div class="prog-stat-details-txt">
+            <p><span>12</span></p>          
+            <p style="color:gray;">Completed</p>
+          </div>
+        </div>
+        <div class="prog-stat-details-prog">
+          <div class="img-bg orange">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+              <path d="M3 3h18c0.553 0 1 0.447 1 1v18c0 0.553-0.447 1-1 1H3c-0.553 0-1-0.447-1-1V4c0-0.553 0.447-1 1-1zm0 2v18h18V5H3zm3 3h12v2H6V8zm0 4h12v2H6v-2zm0 4h12v2H6v-2z" fill="#000"/>
+          </svg>
+          
+          </div>
+          <div class="prog-stat-details-txt">
+            <p><span>14</span></p>          
+            <p style="color:gray;">Upcoming</p>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    <div class="punctuation">
+      <div class="punctuation-level-btn">
+        <a href="" class="nav-link rounded-3 grp">Group course</a>
+        <a href="" class="nav-link rounded-3 adv">Advanced</a>
+      </div>
+      <div>
+        <h3>English punctuation made easy</h3>
+        <p class="punctuation-txt">Punctuation - learn the basics without the pain. <br>
+        People will never laugh at your punctuation again. You <br>
+        do not require any materials or software.</p>
+      </div>
+      <div class="punctuation-details">
+        <div class="punctuation-section rounded-3">
+          <p>Participants</p>
+          <a href="#" class="overlap">
+            <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+          </a>
+          <a href="#" class="overlap">
+            <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+          </a>
+          <a href="#" class="overlap">
+            <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+          </a>
+          <a href="#" class="overlap">
+            <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+          </a>
+        </div>
+        <div class="punctuation-section rounded-3">
+          <p>Course progress</p>
+        </div>
+      </div>
+      <div>
+        <a href="" class="punctuation-learn-btn  rounded-3"> Continue learning</a>
+      </div>
+      
+    </div>
+
+    <div class="schedule">
+      <div class="schedule-caroussel">
+        <h3>My schedule</h3>
+      </div>
+      <div class="schedule-div">
+        <div class="schedule-TechEng rounded-3">
+          <div>
+            <p>10.30 - 12.00</p>
+            <h4>Technical English for <br> Beginners</h4>
+            <a href="" class="nav-link schedule-btn rounded-3">Beginner</a>
+          </div>
+          <div class="Schedule-mentor">
+            <div>
+              <a href="#" class="overlap">
+                <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+              </a>
+            </div>
+            <div>
+              <h6>Kristin Watson</h6>    
+              <p>Mentor</p>
+            </div>
+          </div>
+        </div>
+        <div class="schedule-EngPunct rounded-3">
+          <div>
+            <p>13.00 - 14.00</p>
+            <h4>English punctuation <br>made easy</h4>
+            <a href="" class="nav-link schedule-btn rounded-3">Advanced</a>
+          </div>
+          <div class="Schedule-mentor ">
+            <div>
+              <a href="#" class="overlap">
+                <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+              </a>
+            </div>
+            <div>
+              <h6>Cody Fisher</h6>    
+              <p>Mentor</p>
+            </div>
+          </div>
+        </div>
+        <div class="schedule-TechSpan rounded-3">
+          <div>
+            <p>16.00 - 17.00</p>
+            <h4>Technical Spanish for <br> Beginners</h4>
+            <a href="" class="nav-link schedule-btn rounded-3">Beginner</a>
+          </div>
+          <div class="Schedule-mentor ">
+            <div>
+              <a href="#" class="overlap">
+                <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+              </a>
+            </div>
+            <div>
+              <h6>Jacob Jones</h6>    
+              <p>Mentor</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    </div>
+  </div>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script> -->
+  <script src="index.js"></script>
+</body>
+</html>
